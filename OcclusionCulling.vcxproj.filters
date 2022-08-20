@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OcclusionCulling.cpp" />
+    <ClCompile Include="AABBoxMaskedRasterizerAVXMT.cpp">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="AABBoxRasterizer.cpp">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="AABBoxRasterizerAVX.cpp">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformedAABBoxAVX.cpp">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthBufferMaskedRasterizerAVXMT.cpp">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthBufferRasterizer.cpp">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthBufferRasterizerAVX.cpp">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="HelperAVX.cpp">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="HelperSSE.cpp">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformedModelSSE.cpp">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformedMeshSSE.cpp">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformedAABBoxSSE.cpp">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="OcclusionCulling.h" />
+    <ClInclude Include="MaskedOcclusionCulling\MaskedOcclusionCulling.h">
+      <Filter>MaskedOcclusionCulling</Filter>
+    </ClInclude>
+    <ClInclude Include="AABBoxMaskedRasterizerAVXMT.h">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="AABBoxRasterizer.h">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="AABBoxRasterizerAVX.h">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformedAABBoxAVX.h">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBufferMaskedRasterizerAVXMT.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBufferRasterizer.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBufferRasterizerAVX.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperAVX.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperMT.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperSSE.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformedModelSSE.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBufferRasterizerSSE.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformedMeshSSE.h">
+      <Filter>DepthBufferRasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformedAABBoxSSE.h">
+      <Filter>AABBoxRasterizer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MaskedOcclusionCulling">
+      <UniqueIdentifier>{2318f9b7-db0a-4895-b9f9-29f0c3c48459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware">
+      <UniqueIdentifier>{84e05112-2929-4971-b327-84a85dc69c2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\TBB">
+      <UniqueIdentifier>{f45babcf-a5ac-4bcb-b421-2ef58598cf6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\TBB\x64">
+      <UniqueIdentifier>{21761601-2e66-4508-8732-5a838c9b7188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AABBoxRasterizer">
+      <UniqueIdentifier>{d0e77f9b-5936-4448-b36c-49095efa6212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DepthBufferRasterizer">
+      <UniqueIdentifier>{46407b35-fc14-4256-b019-2005081f6017}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MaskedOcclusionCulling\MaskedOcclusionCullingCommon.inl">
+      <Filter>MaskedOcclusionCulling</Filter>
+    </None>
+    <None Include="MaskedOcclusionCulling\MaskedOcclusionCullingCC.inl">
+      <Filter>MaskedOcclusionCulling</Filter>
+    </None>
+    <None Include="MaskedOcclusionCulling\MaskedOcclusionCullingAVX2.inl">
+      <Filter>MaskedOcclusionCulling</Filter>
+    </None>
+    <None Include="MaskedOcclusionCulling\MaskedOcclusionCullingAVX512.inl">
+      <Filter>MaskedOcclusionCulling</Filter>
+    </None>
+    <None Include="MaskedOcclusionCulling\MaskedOcclusionCullingSSE.inl">
+      <Filter>MaskedOcclusionCulling</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Middleware\TBB\bin\x64\tbbmalloc.dll">
+      <Filter>Middleware\TBB\x64</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Middleware\TBB\bin\x64\tbb.dll">
+      <Filter>Middleware\TBB\x64</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Middleware\TBB\bin\x64\irml.dll">
+      <Filter>Middleware\TBB\x64</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>
